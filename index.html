@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday, You Little Menace ❤️‍🔥</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Poppins:wght@400;600;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<div id="float-layer" aria-hidden="true"></div>
+<button id="music" class="mini" aria-label="Toggle background music">🎵 Music off</button>
+
+<!-- 1. OPENING -->
+<section id="opening" class="screen">
+  <h1>EXCUSE ME?! SOMEONE'S GETTING OLD?! 🎂</h1>
+  <p class="sub">Unfortunately, the world has to tolerate you for another year. Happy Birthday, idiot! ❤️</p>
+  <div class="gift" id="gift" aria-hidden="true"><div class="lid">⭐</div><div class="box"></div></div>
+  <button class="btn" id="openGift">Open Your Birthday Surprise 🎁</button>
+</section>
+
+<main id="main" hidden>
+  <!-- 2. INTRO -->
+  <section class="wrap center">
+    <h2 class="big">HAPPY BIRTHDAY TO MY FAVOURITE DISASTER! ❤️‍🔥</h2>
+    <p class="sub">To the boy who's been annoying me since forever... and somehow still hasn't been replaced.</p>
+    <div class="duo" aria-hidden="true"><span>👧</span><span class="bal">🎈</span><span>🧒</span></div>
+    <ul class="tags">
+      <li>Certified Trouble Maker</li><li>Professional Irritant</li>
+      <li>Childhood Partner in Crime</li><li>0% Braincells, 100% Confidence</li>
+    </ul>
+  </section>
+
+  <!-- 3. ROAST -->
+  <section class="wrap center">
+    <h2>A VERY IMPORTANT OFFICIAL REPORT 📋</h2>
+    <div class="cards">
+      <button class="card glass">Looks innocent, behaves suspiciously.</button>
+      <button class="card glass">Talks too much for someone who makes so little sense.</button>
+      <button class="card glass">Has an unlimited supply of stupid ideas.</button>
+      <button class="card glass">Somehow manages to be both irritating and irreplaceable.</button>
+      <button class="card glass">Age increasing, maturity still loading...</button>
+    </div>
+  </section>
+
+  <!-- 4. NAUGHTY QUIZ -->
+  <section class="wrap center">
+    <h2>Let's Test Your Birthday Privileges 😈</h2>
+    <div class="glass quiz">
+      <p id="qText" class="q">Do you think you're the best person in my life?</p>
+      <div class="row">
+        <button class="btn" id="yes">Obviously, I'm special 😎</button>
+        <button class="btn alt" id="no">No, I'm just handsome 😏</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. MEMORY NOTES: edit the text in each note to add your own inside jokes -->
+  <section class="wrap center">
+    <h2>FROM CHILDHOOD CHAOS TO ADULT NONSENSE 🥹</h2>
+    <div class="notes">
+      <div class="note n1"><span>🏡</span><p>The good old days ❤️</p></div>
+      <div class="note n2"><span>😈</span><p>Proof that we were always trouble.</p></div>
+      <div class="note n3"><span>🔁</span><p>Some things never change.</p></div>
+      <div class="note n4"><span>🤪</span><p>Growing up but never growing out of stupidity.</p></div>
+    </div>
+  </section>
+
+  <!-- 6. LETTER -->
+  <section class="wrap center">
+    <h2>Okay, Enough Bullying. One Serious Minute. 🥺</h2>
+    <button class="envelope" id="envelope" aria-expanded="false">💌<br><small>Tap to open</small></button>
+    <article class="letter glass" id="letter" hidden>
+      <p><b>Happiest birthday to my forever school bestie! ❤️</b></p>
+      <p>From sharing school memories to now sharing life updates from miles away, nothing has changed except the distance.</p>
+      <p>Miss our madness and endless gossip. Wish I could be there to annoy you today!</p>
+      <p>Stay crazy, keep shining and never forget you’re stuck with me. 😂🫶🏻</p>
+    </article>
+  </section>
+
+  <!-- 7. FINAL -->
+  <section class="wrap center">
+    <h2>YOUR BIRTHDAY GIFT IS WAITING... 🎁</h2>
+    <button class="btn" id="claim">Claim Your Birthday Gift 💌</button>
+    <div class="glass reveal" id="reveal" hidden>
+      <p><b>Congratulations! You've officially received:</b></p>
+      <p>✨ One year of unlimited friendship.<br>😈 Unlimited roasting privileges.<br>❤️ Lifetime access to annoying me.<br>🥹 And one friend who isn't going anywhere.</p>
+      <p><small>Terms and conditions: No refunds. No replacements. You're stuck with me.</small></p>
+      <h3>HAPPY BIRTHDAY ONCE AGAIN, YOU LITTLE MENACE! ❤️‍🔥</h3>
+    </div>
+    <p><button class="btn alt small" id="secret">Don't click this 👀</button></p>
+    <p id="secretMsg" class="hidden-msg" hidden>Told you not to. Now you owe me ice cream. 🍦 (Also, you're still an idiot.)</p>
+    <p><button class="btn small" id="replay">🔁 Replay</button></p>
+  </section>
+</main>
+
+<button id="top" class="mini" aria-label="Back to top" hidden>⬆️</button>
+<script src="script.js"></script>
+</body>
+</html>
