@@ -100,7 +100,7 @@ $('#secret').onclick = () => { $('#secretMsg').hidden = false; confetti(40); };
 /* ---------- Music (optional): put a file at audio/bgm.mp3 ---------- */
 let audio = null;
 $('#music').onclick = e => {
-  if (!audio) audio = new Audio('audio/bgm.mp3'), audio.loop = true;
+  if (!audio) audio = new Audio('Chote Tera Birthday Aaya 💕 #nazarbattu #yt #ytshorts #comedy #funnyvideos #skits #birthday.mp3'), audio.loop = true;
   if (audio.paused) audio.play().then(() => e.target.textContent = '🎶 Music on').catch(() => e.target.textContent = '🎵 Add audio/bgm.mp3');
   else { audio.pause(); e.target.textContent = '🎵 Music off'; }
 };
